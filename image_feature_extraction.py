@@ -13,6 +13,8 @@ feature_path = "the path to store the output feature"  # optional as the the pro
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
+# Load the pretrained model from local
+# If the model is not locally available, download the model from Huggingface then save it to local for future use
 try:
     processor = AutoImageProcessor.from_pretrained(processor_path)
     model = AutoModel.from_pretrained(model_path).to(device)
@@ -23,7 +25,7 @@ except Exception as e:
     processor.save_pretrained(processor_path)
     model.save_pretrained(model_path)
 
-
+# Set up the image dataloader
 class ProcessedImageDataset(Dataset):
     def __init__(self, image_dir, processor):
         self.image_dir = image_dir
@@ -47,7 +49,7 @@ class ProcessedImageDataset(Dataset):
 dataset = ProcessedImageDataset(image_dir=image_dir, processor=processor)
 data_loader = DataLoader(dataset, batch_size=4, shuffle=True, num_workers=0)
 
-
+# create an empty dictionary to store final result
 features_dict = dict()
 model.eval()
 
