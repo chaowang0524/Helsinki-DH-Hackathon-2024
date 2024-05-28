@@ -38,11 +38,11 @@ This program takes image files under directory `image_dir` , output a python dic
 
 ### Image Plotting with Plotly in Python
 
-This program uses the Python Plotly library to directly plot image onto a 2D system. The program takes a pandas dataframe (in the code it is the variable `df`) which needs at least three columns: `t-SNE1`, `t-SNE2` and `Image` where the `t-SNE` is a technique to do dimension reduction so you can also use `PCA` if necessary. 
+The program `image_plotting_with_plotly.py` uses the Python Plotly library to directly plot image onto a 2D system. The program takes a pandas dataframe (in the code it is the variable `df`) which needs at least three columns: `t-SNE1`, `t-SNE2` and `Image` where the `t-SNE` is a technique to do dimension reduction so you can also use `PCA` if necessary. 
 
 ### Plotting the Attention Map:
 
-This program plots the average value of the attention score of each attention head across all transformer layers when we are using vision transformer models. This code resizes the image to be processed into a 512*512 pixel image then output the plotting of the attention score of the head 1,9,17,24 (index 0, 8, 16, 23) on the layer 1, 14, 27, 40 (index 0, 13, 26, 39) onto the resized image. 
+The program `attention_map.py` plots the average value of the attention score of each attention head across all transformer layers when we are using vision transformer models. This code resizes the image to be processed into a 512*512 pixel image then output the plotting of the attention score of the head 1,9,17,24 (index 0, 8, 16, 23) on the layer 1, 14, 27, 40 (index 0, 13, 26, 39) onto the resized image. 
 
 Please modify the number of the head and layers to align with your need and with the model (as DINOv2-giant has 40 transformer layers and 24 heads on each layer).
 
