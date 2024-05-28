@@ -15,11 +15,11 @@ cd Helsinki-DH-Hackathon-2024
 ```
 Set up the virtual enviroment:
 ```
-python -m venv .
+python -m venv .venv
 ```
 Load the virtual enviroment, so that the pip packages will be installed in the venv:
 ```
-source venv/bin/activate
+source .venv/bin/activate
 ```
 Install the dependencies:
 ```
