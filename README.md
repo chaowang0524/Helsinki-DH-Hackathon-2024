@@ -3,7 +3,7 @@ This repository is to store the code that are used during the DHH24 Hackathon. T
 
 It covers the main functions that I used in the DHH24 including image feature extraction, ploting image with Plotly and ploting the attention map.
 
-Quick start:  
+### Quick start:  
 
 In terminal (bash):    
 
@@ -26,6 +26,7 @@ Install the dependencies:
 ```
 pip install -r requirements.txt
 ```
+### Programs:
 
 #### Image Feature Extraction:
 
