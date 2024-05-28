@@ -3,6 +3,14 @@ This repository is to store the code that are used during the DHH24 Hackathon. T
 
 It covers the main functions that I used in the DHH24 including image feature extraction, ploting image with Plotly and ploting the attention map.
 
+Quick start:
+In terminal (bash):
+```git clone https://github.com/chaowang0524/Helsinki-DH-Hackathon-2024.git```
+```
+cd Helsinki-DH-Hackathon-2024
+pip install -r requirements.txt
+```
+
 #### Image Feature Extraction:
 
 This code snippet `image_feature_extraction.py` is using a pretrained model DINOv2 (https://huggingface.co/facebook/dinov2-giant) to extract image feature for downstream tasks. 
