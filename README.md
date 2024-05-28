@@ -1,5 +1,5 @@
 # Helsinki-DH-Hackathon-2024
-This repository is to store the code that are used during the DHH24 Hackathon. The instruction of the code is provided.
+This repository is to store the code that I contributed to the team Enlightening Illustrations: Analyzing the Role of Images in Enlightenment-Era Luxury Books during the DHH24 Hackathon. The instruction of the code is provided.
 
 It covers the main functions that I used in the DHH24 including image feature extraction, ploting image with Plotly and ploting the attention map.
 
