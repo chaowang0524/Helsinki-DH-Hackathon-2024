@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Load the pretrained model and processor
+# set the "processer path" and "model path" before use
 processor = AutoImageProcessor.from_pretrained("processer path")
 model = AutoModel.from_pretrained("model path", output_attentions=True)
 
