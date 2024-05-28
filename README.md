@@ -4,6 +4,7 @@ This repository is to store the code that are used during the DHH24 Hackathon. T
 It covers the main functions that I used in the DHH24 including image feature extraction, ploting image with Plotly and ploting the attention map.
 
 Quick start:  
+
 In terminal (bash):    
 
 ```
@@ -17,7 +18,7 @@ Set up the virtual enviroment:
 ```
 python -m venv .venv
 ```
-Load the virtual enviroment, so that the pip packages will be installed in the venv:
+Activate the virtual enviroment, so that the pip packages will be installed in the venv:
 ```
 source .venv/bin/activate
 ```
