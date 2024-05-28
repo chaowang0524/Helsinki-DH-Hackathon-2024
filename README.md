@@ -6,7 +6,9 @@ It covers the main functions that I used in the DHH24 including image feature ex
 Quick start:  
 In terminal (bash):    
 
-```git clone https://github.com/chaowang0524/Helsinki-DH-Hackathon-2024.git```    
+```
+git clone https://github.com/chaowang0524/Helsinki-DH-Hackathon-2024.git
+```
 
 ```
 cd Helsinki-DH-Hackathon-2024
