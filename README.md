@@ -26,9 +26,9 @@ Install the dependencies:
 ```
 pip install -r requirements.txt
 ```
-### Programs:
+## Programs:
 
-#### Image Feature Extraction:
+### Image Feature Extraction:
 
 This code snippet `image_feature_extraction.py` is using a pretrained model DINOv2 (https://huggingface.co/facebook/dinov2-giant) to extract image feature for downstream tasks. 
 
@@ -36,11 +36,11 @@ This program leverages the power of GPUs so running in the environment with GPU 
 
 This program takes image files under directory `image_dir` , output a python dictionary in binary `features_dict` (with keys being the image id and the value the image feature) for further process.
 
-#### Image Plotting with Plotly in Python
+### Image Plotting with Plotly in Python
 
 This program uses the Python Plotly library to directly plot image onto a 2D system. The program takes a pandas dataframe (in the code it is the variable `df`) which needs at least three columns: `t-SNE1`, `t-SNE2` and `Image` where the `t-SNE` is a technique to do dimension reduction so you can also use `PCA` if necessary. 
 
-#### Plotting the Attention Map:
+### Plotting the Attention Map:
 
 This program plots the average value of the attention score of each attention head across all transformer layers when we are using vision transformer models. This code resizes the image to be processed into a 512*512 pixel image then output the plotting of the attention score of the head 1,9,17,24 (index 0, 8, 16, 23) on the layer 1, 14, 27, 40 (index 0, 13, 26, 39) onto the resized image. 
 
