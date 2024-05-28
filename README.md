@@ -13,6 +13,15 @@ git clone https://github.com/chaowang0524/Helsinki-DH-Hackathon-2024.git
 ```
 cd Helsinki-DH-Hackathon-2024
 ```
+Set up the virtual enviroment:
+```
+python -m venv .
+```
+Load the virtual enviroment, so that the pip packages will be installed in the venv:
+```
+source venv/bin/activate
+```
+Install the dependencies:
 ```
 pip install -r requirements.txt
 ```
